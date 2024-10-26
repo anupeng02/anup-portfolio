@@ -1,0 +1,36 @@
+
+.home{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        
+        color: yellowgreen;
+
+    font-size: 75px;
+    font-weight:100;
+
+    padding-top: 30%;
+    }
+}
+
+
+
+
+
+
+.home-contactMe{
+    
+
+    button{
+        background-color:yellowgreen;
+        width: 100px;
+        height: 50px;
+        color: rgb(24, 2, 2);
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}

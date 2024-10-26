@@ -1,0 +1,30 @@
+h1{
+    color: brown;
+}
+
+.wrapper{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px dashed  yellowgreen;
+
+
+    h1{
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        line-height: 1rem;
+        text-transform: capitalize;
+        color: yellowgreen;
+        display: flex;
+        flex-grow: 1;
+    }
+
+
+    span{
+
+        color: yellowgreen;
+    }
+}
