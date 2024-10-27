@@ -1,12 +1,10 @@
-.contact{
+.contact {}
 
-}
-
-.contact-content{
+.contact-content {
     padding: 20px;
 }
 
-.contact-content-header-text{
+.contact-content-header-text {
     color: white;
     display: inline-block;
     font-size: 22px;
@@ -18,23 +16,24 @@
     padding: 5px 10px;
     border-bottom: 2px solid yellowgreen;
 
-    &contact-content-header-text::before, &contact-content-header-text::after {
-     position: absolute;
-     content: "";
-     width: 2px ;
-     height: 5px ;
-     background-color: yellowgreen;
-     bottom: -1px;
+    &contact-content-header-text::before,
+    &contact-content-header-text::after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 5px;
+        background-color: yellowgreen;
+        bottom: -1px;
     }
 }
 
 
-.contact-content-form{
+.contact-content-form {
 
     margin-top: 30px;
 }
 
-.contact-content-form-controls-wrapper{
+.contact-content-form-controls-wrapper {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -42,16 +41,16 @@
     margin-bottom: 30px;
 
 
-    div{
+    div {
         position: relative;
 
         .inputName,
         .inputEmail,
-        .inputDescription{
+        .inputDescription {
             width: 100%;
             border: 2px solid yellowgreen;
             padding: 16px 12px;
-            transition:  all 0.5s ease;
+            transition: all 0.5s ease;
             position: relative;
             background-color: transparent;
             color: white;
@@ -59,7 +58,7 @@
 
         .nameLabel,
         .emailLabel,
-        .descriptionLabel{
+        .descriptionLabel {
             font-size: 500;
             position: absolute;
             top: 7px;
@@ -71,63 +70,71 @@
 
         .inputName:focus,
         .inputEmail:focus,
-        .inputDescription:focus{
+        .inputDescription:focus {
             outline: none;
         }
 
 
-        .inputName:focus + .nameLabel,
-        .inputName:valid + .nameLabel{
-           font-size: 18px;
-           top: -25px;
-           left: 0px;
+        .inputName:focus+.nameLabel,
+        .inputName:valid+.nameLabel {
+            font-size: 18px;
+            top: -25px;
+            left: 0px;
 
         }
 
-        .inputEmail:focus + .emailLabel,
-        .inputEmail:valid + .emailLabel                           {
+        .inputEmail:focus+.emailLabel,
+        .inputEmail:valid+.emailLabel {
             font-size: 18px;
             top: -25px;
             left: 0px;
-            
-         }
 
-         .inputDescription:focus + .descriptionLabel,
-         .inputDescription:valid + .descriptionLabel                                      {
+        }
+
+        .inputDescription:focus+.descriptionLabel,
+        .inputDescription:valid+.descriptionLabel {
             font-size: 18px;
             top: -25px;
             left: 0px;
-            
-         }
+
+        }
+
+
     }
 }
 
-button{
-    cursor: pointer;
-    padding: 10px 70px;
-    font-size: 2rem;
-    background: transparent;
-    color: yellowgreen;
-    border: 1.5px solid yellowgreen;
-    border-radius: 4px;
-    font-weight: 500;
+.contact-button {
+    
+        cursor: pointer;
+        padding: 10px 70px;
+        font-size: 2rem;
+        background: transparent;
+        color: yellowgreen;
+        border: 1.5px solid yellowgreen;
+        border-radius: 4px;
+        font-weight: 500;
 
-    &:hover{
-        color: #000;
-        background: yellowgreen;
-    }
+        &:hover {
+            color: #000;
+            background: yellowgreen;
+        }
+    
+
+
 }
+
+
 
 @media only screen and (max-width:768px) {
-    .contact-content-form{
+    .contact-content-form {
 
         text-align: center;
 
     }
 
-    .contact-content-form-controls-wrapper{
+    .contact-content-form-controls-wrapper {
 
         grid-template-columns: repeat(1, 1fr);
-    
+
     }
 }

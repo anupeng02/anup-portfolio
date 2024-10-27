@@ -60,7 +60,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <button>Submit</button>
+                        <button className="contact-button">Submit</button>
 
                     </div>
 
