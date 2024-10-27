@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .skills-InnerContent-Wrapper-categoryText{
@@ -28,16 +29,21 @@
     text-transform: uppercase;
     padding: 5px, 10px;
     border-bottom: 2px solid yellowgreen ;
+    
+
+    div{
+        width: 100%;
+    }
 }
 
-.skills-InnerContent-Wrapper-categoryText::before{
+/* .skills-InnerContent-Wrapper-categoryText::before{
 
 position: absolute;
 content: "";
 width: 10px;
 height: 5px;
 background-color: yellowgreen;
-bottom: -1px;
+
 }
 
 .skills-InnerContent-Wrapper-categoryText::after{
@@ -47,4 +53,29 @@ width: 2px;
 height: 5px;
 background-color: yellowgreen;
 bottom: -1px;
+} */
+
+
+.progressbar-wrapper{
+
+    padding: 50px 0px 0px 0px;
+
+
+    p{
+        font-size: 1.6rem;
+        margin: 0  0 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+
+
+@media only screen and (max-width:768px ) {
+
+    ..skillsContent-Wrapper{
+        flex-direction: column;
+    }
+    
 }
